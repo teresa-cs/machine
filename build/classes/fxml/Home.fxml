@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="515.0" prefWidth="667.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mymachine.HomeController">
+   <children>
+      <Text layoutX="33.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hi there!" />
+      <Text layoutX="45.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CHOOSE THE AMOUNT" />
+      <Text layoutX="48.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AMOUNT:" />
+      <Text fx:id="txtMoneyIn" fill="#302f2f" fontSmoothingType="LCD" layoutX="181.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="116.00001525878906" />
+      <Text layoutX="13.0" layoutY="495.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BALANCE:" />
+      <Text fx:id="txtWallet" layoutX="116.0" layoutY="494.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="81.5999755859375" />
+      <Button fx:id="btnNhap" layoutX="437.0" layoutY="55.0" mnemonicParsing="false" onAction="#addMoney" text="ENTER" />
+      <ImageView fitHeight="103.0" fitWidth="104.0" layoutX="266.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/pepsi.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="116.0" layoutX="464.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/soda.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="103.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10000đ" />
+      <Text layoutX="294.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10000đ" />
+      <Text layoutX="499.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20000đ" />
+      <Spinner fx:id="cocaCount" layoutX="96.0" layoutY="295.0" prefHeight="18.0" prefWidth="70.0" />
+      <Spinner fx:id="pepsiCount" layoutX="282.0" layoutY="295.0" prefHeight="18.0" prefWidth="70.0" />
+      <Spinner fx:id="sodaCount" layoutX="487.0" layoutY="295.0" prefHeight="18.0" prefWidth="70.0" />
+      <Text layoutX="373.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL" />
+      <Text fx:id="txtTotal" layoutX="506.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="63.11848831176758" />
+      <Text fx:id="txtName" layoutX="94.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="63.11848831176758" />
+      <ComboBox fx:id="cbMoneyIn" layoutX="239.0" layoutY="58.0" prefWidth="150.0" />
+      <Button fx:id="btnBuy" layoutX="465.0" layoutY="434.0" mnemonicParsing="false" onAction="#newOrder" text="BUY" />
+      <Button layoutX="569.0" layoutY="434.0" mnemonicParsing="false" onAction="#cancel" text="CANCEL" />
+      <Button fx:id="btnOK" layoutX="579.0" layoutY="372.0" mnemonicParsing="false" onAction="#addOrder" text="OK" />
+      <ImageView fitHeight="103.0" fitWidth="128.0" layoutX="69.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/coca.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
